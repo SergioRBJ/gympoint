@@ -1,4 +1,4 @@
-# gym-point
+# gympoint
 
 Aplicação completa desenvolvida usando ecossistema JavaScript para administração de academia.
 
@@ -31,3 +31,11 @@ Com o Docker iniciado, abra o prompt/terminal e execute o comando abaixo:
 
 Este comando irá criar as três imagens à partir do arquivo ```docker-compose.yml```.
 
+### Variaveis de ambiente
+
+Depois dos servidores configurados, crie seu arquivo ```.env``` na raiz pois temos que inserir as credenciais de alguns recursos como:
+
+1. APP &rarr; Váriaveis da aplicação.
+2. JWT &rarr; Váriavel do segredo usado para autenticação JWT.
+3. DATABASE/MONGO/REDIS &rarr; Váriaveis dos servidores usados na aplicação(se você usou o docker compose abra o arquivo ```docker-compose.yml``` para extrair os valores).
+4. MAIL &rarr; Váriaveis usadas para o sistema de envio de e-mail.
